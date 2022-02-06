@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Tour - Tudo sobre o Coração da Flórida </title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <header id="menu"></header>
+     <div class="marginOn">
+         <h1 class="primeiroElemento">Quem somos?</h1> <p>
+         <h3 class="destaque">A Orlando Tour é um site feito de amantes dessa cidade com o objetivo de apresenta-la para outros brasileiros. O que no ínicio era apenas uma galeria de fotos no facebook foi crescendo
+             exponencialmente, nossa comunidade foi aumentando e enquanto compartilhavamos experiências, começamos a idealizar um projeto para expandir o alcance de nosso grupo e promover essa conexão 
+             para mais pessoas. Hoje em dia alguns ainda vivem no brasil, outros se mudaram para os Estados Unidos ou mesmo outros locais do globo, entretanto a comunidade continua unida! Nosso objetivo com  
+             esse site é permitir que você sinta a experiência dessa cidade maravilhosa como se estivesse fazendo um tour por lá, então caso queira reviver belas memórias e criar novas experiencias que 
+             realmente valham a pena, prepare as malas, afivelem os cintos e... </h3> 
+        <div class="tooltip">
+            <h2 class="destaque">EMBARQUE CONOSCO NESSA JORNADA!</h2>
+            <span class="tooltiptext">E visite nossas redes sociais no instagram e twitter!</span>
+        </div>
+         <div id="imagemViagem" href="#imagemViagem"></div> 
+     </div>
+     <div id="footer"></div>
+</body>
+
+<script src="../js/menu.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/background.js"></script>
+
+<style>
+
+    #imagemViagem img {
+        height: 440px;
+        width: 50%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    h2 {
+        padding: 30px;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    .tooltip {
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 620px;
+        background-color: rgb(11, 152, 207);
+        color: black;
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+        padding: 5px 0;
+        /*position: absolute;*/
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        /*margin-left: -365px;*/
+        font-size: 15px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    @media only screen and (max-width:1210px) {
+        #imagemViagem img {
+            width: 60%;
+        }
+    }
+
+    @media only screen and (max-width:930px) {
+        #imagemViagem img {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        #imagemViagem img {
+            width: 95%;
+        }
+    }
+
+    @media only screen and (max-width:750px) {
+        .tooltip h2 {
+            font-size: 25px;
+        }  
+
+        .tooltip .tooltiptext {
+            padding:0px 33px;
+            width: fit-content;
+        }
+    }
+
+</style>
+</html>

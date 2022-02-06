@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dawn {
+    background-image: url("../imagens/bgDawn.webp");
+}
+
+.morning {
+    background-image: url("../imagens/bgMorning.jpg");
+}
+
+.afternoon {
+    background-image: url("../imagens/bgAfternoon.jpg");
+}
+
+.night {
+    background-image: url("../imagens/bgNight.jpg");
+}
+
+.primeiroElemento {
+    margin-top: 100px;
+    margin-bottom: 0%;
+    padding: 5px;
+}
+
+.destaque { 
+    background-color: rgb(11, 152, 207);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-right: 10px;
+    margin-top: 0%;
+    line-height: 10%;
+    padding: 7px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    text-align: left;
+    text-justify: inter-word;
+    padding: 6px;
+    font-size: 1.17em;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h6 {
+    text-align:justify;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.cabecalho {
+    background: lightgray; 
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: -webkit-flex;
+    display: flex;
+}
+
+.footer {
+    background: lightgray; 
+    border-top: solid 5px #4faddb;
+    height: 100px;
+    box-sizing: content-box;
+    bottom: 0; 
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    height: 80%;
+    width: 25%;
+    min-width: fit-content;
+    margin: auto;
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-right: 105px;
+    float: left; 
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color:rgb(38, 10, 104);
+}
+
+a:hover {
+    text-decoration:solid;
+    font-size: 30px;
+    color:rgb(104, 10, 10);
+}
+
+.logo img{
+    margin: 0px;
+    height: 70%;
+}
+
+.menu {
+    height: 80px;
+    padding-top: 0px;
+    padding-right: 0px;
+    /* position: absolute;*/
+    margin-left: auto;
+    top: 0px; 
+    -webkit-flex: auto;
+    flex: auto;
+    position: relative;
+    align-content: space-between;
+}
+
+.menu ul {
+    padding: 14px 16px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: auto;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.menu li {
+    display: inline-block;
+    flex-grow: 1;
+    justify-self:normal;
+}
+
+.menu li a {
+    color: rgb(149, 0, 255);
+    padding: 0px 8px;
+}
+
+.menu a:hover,
+.menu a.selected {
+    background-color: #4faddb;
+    color: #000; 
+    border-radius: 10px;
+}
+
+#contatos {
+    border-radius: 30px;
+    margin: 10px;
+    background: rgb(239, 211, 127);
+    color: rgb(149, 0, 255);
+    overflow: visible;
+    width: fit-content;
+    float: right;
+    padding: 8px;
+    margin-top: 13px;
+    margin-right: 5px;
+    margin-left: 105px;
+    align-content: flex-end;
+}
+
+#contatos:hover {
+    background-color: #555; 
+  }
+
+#myBtn {
+    border: none; 
+    outline: none; 
+    background-color: rgb(239, 211, 127); 
+    color:  rgb(149, 0, 255); 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: 34px; 
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 240px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin-left: auto;
+}
+
+
+#myBtn:hover {
+    background-color: #555; 
+  }
+  
+.marginOn {
+    margin: 20px;
+}
+
+#preTimer {
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+#timer {
+    justify-content: left;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:1380px) {
+    .logo {
+        margin-right: 55px;
+    }
+
+    #contatos {
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (max-width:1235px) {
+    .logo {
+        margin-right: 55px;
+    }
+
+    .menu {
+        margin-top: 8px;
+    }
+
+    .menu a{
+        font-size: 25px;
+    }
+
+    #contatos {
+        margin-left: 55px;
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .logo {
+        margin-right: 35px;
+    }
+
+    .logo img {
+        display: inline-block;
+        height: 35px;
+        margin-top: 8px;
+    }
+
+    .menu {
+        margin-top: 8px;
+    }
+
+    .menu a{
+        font-size: 25px;
+    }
+
+    #contatos {
+        margin-left: 35px;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:986px) {
+    #contatos {
+        text-align: center;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .logo img {
+        display: inline-block;
+        height: 35px;
+        margin-top: 8px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .cabecalho .menu {
+        margin-top: 0px;
+    }
+
+    .cabecalho .menu ul{
+        padding-top: 0px;
+        line-height: 40px;
+    }
+
+    #contatos {
+        font-size: 15px;
+        line-height: 40px;
+    }
+  }
+
+  @media only screen and (max-width:833px) {
+    .logo {
+        margin-right: 10px;
+    }
+    
+    .logo img {
+        display: inline-block;
+        height: 28px;
+        margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width:752px) {
+    #contatos {
+        font-size: 14px;
+        line-height: 37px;
+        text-align: center;
+        margin-left: 10px;
+    }
+   }
+
+   @media only screen and (max-width:727px) {
+    #contatos {
+        line-height: 23px;
+    }
+   } 
+
+   @media only screen and (max-width:690px) {
+        .logo {
+            width: fit-content;
+            
+        }  
+
+        .logo .hide {
+            display: none;
+        }
+
+        .logo img {
+            display: block;
+            height: 25px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #contatos {
+            line-height: 37px;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        #myBtn {
+            margin-right: 6px;
+        }
+
+        .logo img {
+            height: 20px;
+            margin-top: 4px;
+        }
+
+        
+    }
+
+    @media only screen and (max-width:576px) {
+        #contatos {
+            font-size: 12px;
+            line-height: 23px;
+            text-align: center;
+            margin-right: 7px;
+        }
+    }
+
+    @media only screen and (max-width:518px) {
+        #contatos {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            margin-left: 10px;
+        }
+    }
